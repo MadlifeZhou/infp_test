@@ -189,9 +189,12 @@ body {
   font-size: 0.88rem;
   color: var(--text-secondary);
   line-height: 1.8;
-  margin: 0 auto 12px;
+  margin-bottom: 12px;
   text-align: justify;
-  max-width: 68%;
+}
+
+.home-body {
+  padding: 0 16px;
 }
 
 .home-desc-sm {
@@ -946,33 +949,35 @@ body {
       <h1 class="home-title">你走到哪一步了？</h1>
       <p class="home-subtitle">INFP 阶位测试</p>
       <div class="home-divider"></div>
-      <p class="home-desc">
-        作为一个INFP，你是否也曾这样：心里装着很多想法，却不知道怎么把它变成现实；能感受到别人的情绪，却常常分不清哪些该接、哪些该放……
-      </p>
-      <p class="home-desc-sm">
-        这不是你的问题，<br>这只是你在这条路上走到了某一个阶段。
-      </p>
-      <div class="home-dimensions">
-        <span class="dim-tag">内在宇宙</span>
-        <span class="dim-tag">人际共生</span>
-        <span class="dim-tag">现实引擎</span>
+      <div class="home-body">
+        <p class="home-desc">
+          作为一个INFP，你是否也曾这样：心里装着很多想法，却不知道怎么把它变成现实；能感受到别人的情绪，却常常分不清哪些该接、哪些该放……
+        </p>
+        <p class="home-desc-sm">
+          这不是你的问题，<br>这只是你在这条路上走到了某一个阶段。
+        </p>
+        <div class="home-dimensions">
+          <span class="dim-tag">内在宇宙</span>
+          <span class="dim-tag">人际共生</span>
+          <span class="dim-tag">现实引擎</span>
+        </div>
+        <div class="home-info">
+          <div class="info-item">
+            <span class="info-icon">&#9998;</span>
+            <span>24道题目</span>
+          </div>
+          <div class="info-item">
+            <span class="info-icon">&#9201;</span>
+            <span>5-8分钟</span>
+          </div>
+          <div class="info-item">
+            <span class="info-icon">&#9733;</span>
+            <span>6维解析</span>
+          </div>
+        </div>
+        <button class="btn-primary" onclick="startTest()">开始测试</button>
+        <p class="home-note">没有对错之分，越真实，结果越准确</p>
       </div>
-      <div class="home-info">
-        <div class="info-item">
-          <span class="info-icon">&#9998;</span>
-          <span>24道题目</span>
-        </div>
-        <div class="info-item">
-          <span class="info-icon">&#9201;</span>
-          <span>5-8分钟</span>
-        </div>
-        <div class="info-item">
-          <span class="info-icon">&#9733;</span>
-          <span>6维解析</span>
-        </div>
-      </div>
-      <button class="btn-primary" onclick="startTest()">开始测试</button>
-      <p class="home-note">没有对错之分，越真实，结果越准确</p>
     </div>
   </div>
 </section>
